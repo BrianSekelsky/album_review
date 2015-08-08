@@ -8,6 +8,11 @@
 @import "sessions";
 @import "users";
 
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* NAVBAR */
 #main-nav{
   border: 0;
   border-radius: 0;
@@ -22,7 +27,7 @@
   letter-spacing: -6px;
   height: 80px;
   padding: 30px 30px 30px 30px;
-  color: white;
+  color: #66FF66;
 }
 .nav-but{
   height: 80px;
@@ -30,10 +35,18 @@
   float: left;
   border: 0;
   background-color: black;
-  color: white;
 }
 .nav-but:hover{
-  background-color: white;
+  background-color: #009933;
   text-decoration: none;
   color: black;
+}
+.but-text{
+  color: white;
+}
+
+/* MAIN */
+#PageWrapper{
+  margin: auto;
+  width: 950px;
 }
