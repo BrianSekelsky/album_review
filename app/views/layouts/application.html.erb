@@ -10,6 +10,8 @@
   <link href='http://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Patrick+Hand+SC' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
@@ -24,22 +26,22 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" id='brand' href="#">Reco</a>
+        <div id='brand'><%= link_to 'RECOMMEND', albums_path %></div>
       </div>
-
+      <div id = 'SearchWrapper'>
+        
+      </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <button class='nav-but'><li><a href="#">Link</a></li></button>
-          <button class='nav-but'><li><a href="#">Link</a></li></button>
-        </ul>
         <ul class="nav navbar-nav navbar-right">
           <% if user_signed_in? %>
-            <button><li>
-              <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
-            </li></button>
+            <div class="nav-but"><li>
+              <%= link_to current_user.email, albums_path %>
+            </li></div>
           <% else %>
-          <button class='nav-but'><li><a class='but-text' href="#">Login</a></li></button>
+            <div class='nav-but'><li>
+              <%= link_to 'Login', new_user_session_path %>
+            </li></div>
           <% end %>
         </ul>
       </div><!-- /.navbar-collapse -->

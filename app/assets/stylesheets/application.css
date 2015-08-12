@@ -21,10 +21,10 @@ body{
 }
 #brand{
   //font-family: 'Montserrat Subrayada', sans-serif;
-  font-family: 'Montserrat', sans-serif;
-  //font-weight: bold;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
   font-size: 36pt;
-  letter-spacing: -6px;
+  letter-spacing: 2px;
   height: 80px;
   padding: 30px 30px 30px 30px;
   color: #66FF66;
@@ -43,6 +43,13 @@ body{
 }
 .but-text{
   color: white;
+}
+
+#SearchWrapper{
+  width: 100%;
+}
+#Search{
+  width: 100%;
 }
 
 /* MAIN */
